@@ -1,16 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import { Provider } from 'react-redux';
+import store from './store';
 import App from './App';
-import registerServiceWorker from './registerServiceWorker';
-import { Provider } from "redux-zero/react";
-import store from "./store";
+import 'bootstrap/dist/css/bootstrap.min.css';
+import './index.css';
 
-const Index = () => (
-	<Provider store={store}>
-		<App />
-	</Provider>
+ReactDOM.render(
+  <Provider store={store}>
+    <App />
+  </Provider>
+  ,
+  document.getElementById('root')
 );
-
-ReactDOM.render(<Index />, document.getElementById('root'));
-registerServiceWorker();
