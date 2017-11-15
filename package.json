@@ -8,7 +8,6 @@
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14",
     "redux-zero": "^4.1.1",
-    "homepage": "https://dianamariasilva.github.io/trello-firebase",
     "bootstrap": "^3.3.7"
   },
   "scripts": {
